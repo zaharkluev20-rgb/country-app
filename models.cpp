@@ -44,11 +44,11 @@ Person* MagP::clone() const
 QString MagP::craft() const
 {
     return QString("Карточка мага:\n"
-                   "⭐ Имя: %1\n"
-                   "✨ Стихия: %2\n"
-                   "❤️ Здоровье: %3\n"
-                   "💙 Мана: %4\n"
-                   "🛡️ Броня: %5")
+                   " Имя: %1\n"
+                   " Стихия: %2\n"
+                   " Здоровье: %3\n"
+                   " Хилка: %4\n"
+                   " Броня: %5")
             .arg(m_name, m_element, QString::number(m_health),
                  QString::number(m_mana), m_armor.toString());
 }
@@ -91,11 +91,11 @@ Person* VragP::clone() const
 QString VragP::craft() const
 {
     return QString("Карточка врага:\n"
-                   "👹 Имя: %1\n"
-                   "🏷️ Редкость: %2\n"
-                   "❤️ Здоровье: %3\n"
-                   "⚔️ Урон: %4\n"
-                   "🛡️ Броня: %5")
+                   " Имя: %1\n"
+                   " Редкость: %2\n"
+                   " Здоровье: %3\n"
+                   " Урон: %4\n"
+                   " Броня: %5")
             .arg(m_name, m_rarity, QString::number(m_health),
                  QString::number(m_damage), m_armor.toString());
 }
